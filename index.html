@@ -84,6 +84,17 @@ a {
     color: #4db8ff;
 }
 
+/* Lista */
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
 /* Responsivo (celular) */
 @media (max-width: 768px) {
     .container {
@@ -112,6 +123,7 @@ a {
         <h2>PosterDev</h2>
         <button onclick="trocarTela('home')">🏠 Home</button>
         <button onclick="trocarTela('sobre')">👤 Sobre</button>
+        <button onclick="trocarTela('trajetoria')">📈 Minha Trajetória</button>
         <button onclick="trocarTela('links')">🔗 Links</button>
     </div>
 
@@ -130,6 +142,19 @@ a {
             <h1>Sobre mim</h1>
             <p>Estou estudando programação e me atualizando todos os dias para trazer mais conhecimento e aplicar em meu trabalho. Sou extremamente dedicado e proativo, sempre procurando resolver questões complexas com seriedade. Tive boas experiências em algumas áreas durante meu trajeto até aqui, onde escolhi trilhar este caminho e me aprofundar neste desafio que é o ramo de desenvolvimento de projetos. Obrigado por visitar meu novo portfólio!</p>
             </div>
+        </div>
+
+        <div id="trajetoria" class="card" style="display:none;">
+            <h1>Minha Trajetória</h1>
+            <p>Minha jornada na programação começou com a curiosidade e a vontade de resolver problemas. Ao longo do tempo, venho me especializando em desenvolvimento web, aprendendo tecnologias como HTML, CSS, JavaScript e frameworks modernos.</p>
+            <p>Atualmente, estou focado em projetos pessoais e profissionais que me permitem crescer como desenvolvedor, sempre buscando novas oportunidades de aprendizado e contribuição para a comunidade tech.</p>
+            <p><strong>Principais conquistas:</strong></p>
+            <ul>
+                <li>✅ Desenvolvimento de portfólio pessoal</li>
+                <li>✅ Participação em projetos open source</li>
+                <li>✅ Aprendizado contínuo de novas tecnologias</li>
+                <li>✅ Resolução de problemas complexos</li>
+            </ul>
         </div>
 
         <div id="links" class="card" style="display:none;">
