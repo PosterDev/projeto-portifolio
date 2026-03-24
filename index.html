@@ -137,6 +137,50 @@ li {
     margin: 20px auto;
 }
 
+/* Seção Cargo Desejado */
+#cargo h2 {
+    color: #00ff88;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+#cargo h3 {
+    color: #4db8ff;
+    margin: 25px 0 15px 0;
+    font-size: 1.1em;
+}
+
+#cargo ul {
+    text-align: left;
+    margin: 15px 0;
+}
+
+#cargo em {
+    color: #e0e0e0;
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.tech {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 1px solid #00ff88;
+    display: inline-block;
+}
+
 /* Responsivo (celular) */
 @media (max-width: 768px) {
     .container {
@@ -156,6 +200,15 @@ li {
     .profile-photo {
         width: 120px;
         height: 120px;
+    }
+
+    .tech-stack {
+        justify-content: flex-start;
+    }
+
+    .tech {
+        font-size: 0.8em;
+        padding: 4px 8px;
     }
 }
 
@@ -187,6 +240,7 @@ li {
         <button onclick="trocarTela('home')">🏠 Home</button>
         <button onclick="trocarTela('sobre')">👤 Sobre</button>
         <button onclick="trocarTela('trajetoria')">📈 Minha Trajetória</button>
+        <button onclick="trocarTela('cargo')">🎯 Cargo Desejado</button>
         <button onclick="trocarTela('links')">🔗 Links</button>
     </div>
 
@@ -229,6 +283,32 @@ li {
                 <li>✅ Aprendizado contínuo de novas tecnologias</li>
                 <li>✅ Resolução de problemas complexos</li>
             </ul>
+        </div>
+
+        <div id="cargo" class="card" style="display:none;">
+            <h1>Cargo Desejado</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <p>Estou em busca de uma oportunidade como <strong>Desenvolvedor Front-End</strong>, onde possa aplicar minhas habilidades em desenvolvimento web e contribuir para projetos inovadores.</p>
+
+            <h3>💼 O que procuro:</h3>
+            <ul>
+                <li>✅ Ambiente de trabalho colaborativo e dinâmico</li>
+                <li>✅ Oportunidades de aprendizado e crescimento profissional</li>
+                <li>✅ Projetos desafiadores com tecnologias modernas</li>
+                <li>✅ Equipe engajada em desenvolvimento de qualidade</li>
+            </ul>
+
+            <h3>🛠️ Tecnologias que domino:</h3>
+            <div class="tech-stack">
+                <span class="tech">HTML5</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">JavaScript</span>
+                <span class="tech">React</span>
+                <span class="tech">Git</span>
+                <span class="tech">Responsive Design</span>
+            </div>
+
+            <p><em>Disponível para oportunidades remotas, híbridas ou presenciais em São Paulo/SP.</em></p>
         </div>
 
         <div id="links" class="card" style="display:none;">
