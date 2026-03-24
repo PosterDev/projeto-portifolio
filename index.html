@@ -95,6 +95,27 @@ li {
     color: #e0e0e0;
 }
 
+/* Foto de perfil */
+.profile-container {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ff88;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
+}
+
 /* Responsivo (celular) */
 @media (max-width: 768px) {
     .container {
@@ -109,6 +130,27 @@ li {
 
     .content {
         padding: 20px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .profile-photo {
+        width: 180px;
+        height: 180px;
     }
 }
 </style>
@@ -132,7 +174,9 @@ li {
 
         <div id="home" class="card">
             <h1>Bem-vindo(a) 👨‍💻</h1>
-            <img src="src/img/CURRICULUM.jpg" style="width:90px; border-radius:50%; margin-bottom: 20px;">
+            <div class="profile-container">
+                <img src="src/img/CURRICULUM.jpg" alt="Foto de perfil" class="profile-photo">
+            </div>
             <p>Minha jornada como programador começa aqui. Espero que você dê oportunidade de mostrar meu potencial.</p>
         </div>
 
@@ -146,8 +190,17 @@ li {
 
         <div id="trajetoria" class="card" style="display:none;">
             <h1>Minha Trajetória</h1>
-            <p>Minha jornada na programação começou com a curiosidade e a vontade de resolver problemas. Ao longo do tempo, venho me especializando em desenvolvimento web, aprendendo tecnologias como HTML, CSS, JavaScript e frameworks modernos.</p>
-            <p>Atualmente, estou focado em projetos pessoais e profissionais que me permitem crescer como desenvolvedor, sempre buscando novas oportunidades de aprendizado e contribuição para a comunidade tech.</p>
+            <p>Trabalhei durante um grande período em diferentes projetos, adquirindo experiência e aprimorando minhas habilidades técnicas em vários setores que atendiam ao mercado de baterias automotivas em São Paulo e no Brasil.</p>
+            <p>Aqui estão minhas experiências ao longo do tempo:</p>
+            <ul>
+                <li>✅ Gestão de equipe de vendas (varejo e atacado)</li>
+                <li>✅ Acompanhamento de abertura de novos negócios (lojas e parcerias)</li>
+                <li>✅ Experiência em atendimento ao cliente e negociação de custos junto aos fornecedores</li>
+                <li>✅ Estratégia de vendas e análise de concorrência</li>
+                <li>✅ Treinamentos de novos representantes comerciais</li>
+            </ul>
+            <p>Minha jornada na programação começou com a curiosidade e a vontade de resolver problemas. Venho me especializando em desenvolvimento web, aprendendo tecnologias como HTML, CSS, JavaScript e frameworks modernos para que futuramente eu possa me tornar um profissional completo.</p>
+            <p>Atualmente, estou focado em projetos pessoais e profissionais que me permitem crescer como desenvolvedor, sempre buscando novas oportunidades de aprendizado e contribuição para as empresas e a comunidade.</p>
             <p><strong>Principais conquistas:</strong></p>
             <ul>
                 <li>✅ Desenvolvimento de portfólio pessoal</li>
