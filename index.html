@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head> <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PosterDev</title>
@@ -352,6 +353,40 @@ li {
     }
 }
 
+/* Links com Ícones */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(0, 255, 136, 0.1);
+    border: 2px solid #00ff88;
+    border-radius: 10px;
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.social-link:hover {
+    background: rgba(0, 255, 136, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+.social-link i {
+    font-size: 1.2em;
+}
+
 /* Desktop grande */
 @media (min-width: 1200px) {
     .profile-photo {
@@ -373,7 +408,6 @@ li {
         <button onclick="trocarTela('sobre')">👤 Sobre</button>
         <button onclick="trocarTela('trajetoria')">📈 Minha Trajetória</button>
         <button onclick="trocarTela('cargo')">🎯 Cargo Desejado</button>
-        <button onclick="trocarTela('links')">🔗 Links</button>
     </div>
 
     <!-- Conteúdo -->
@@ -385,6 +419,16 @@ li {
                 <img src="src/img/CURRICULUM.jpg" alt="Foto de perfil" class="profile-photo">
             </div>
             <p>Minha jornada como programador começa aqui. Espero que você dê oportunidade de mostrar meu potencial.</p>
+            <div class="social-links">
+                <a href="https://github.com/PosterDev" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
         </div>
 
 
@@ -443,11 +487,6 @@ li {
             <p><em>Disponível para oportunidades remotas, híbridas ou presenciais em São Paulo/SP.</em></p>
         </div>
 
-        <div id="links" class="card" style="display:none;">
-            <h1>Minhas redes</h1>
-            <a href="https://github.com/PosterDev" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
 
     </div>
 
