@@ -718,6 +718,27 @@ li {
     box-shadow: 0 8px 0 #8e3a17, 0 14px 22px rgba(60, 30, 10, 0.16);
 }
 
+.certificate-item.is-featured {
+    position: relative;
+    border-color: #d47a1a;
+    box-shadow: 0 8px 0 #8e3a17, 0 0 0 4px rgba(255, 194, 84, 0.35), 0 14px 22px rgba(60, 30, 10, 0.2);
+}
+
+.certificate-badge {
+    position: absolute;
+    top: -14px;
+    left: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 3px solid #8e3a17;
+    background: linear-gradient(to bottom, #ffd46c, #f2a435);
+    color: #4b1d06;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.42rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .certificate-item img {
     display: block;
     width: 100%;
