@@ -1,54 +1,62 @@
 # PosterDev - Portfólio
 
-Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
+Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, com foco em apresentação profissional, interatividade e identidade visual própria.
 
-## 📋 Sobre o Projeto
+## Sobre o projeto
 
-Site de apresentação profissional com: - Home com boas-vindas e foto de perfil
-- Seção "Sobre mim" com descrição de formação e experiência
-- Links para redes sociais (GitHub e LinkedIn)
-- Design responsivo com gradiente de fundo
-- Efeitos de animação suave
+O site reúne seções de apresentação, trajetória, objetivo profissional, projetos e certificados em uma interface temática e responsiva.
 
-## 🚀 Como Usar
+### Recursos atuais
 
-1. Abra `index.html` em seu navegador
-2. Clique nos botões do menu para navegar entre seções
+- Navegação entre seções por menu lateral
+- Atalhos de teclado de 1 a 6 para troca rápida de telas
+- Destaques animados na home com indicadores numéricos
+- Painel de skills com animação progressiva
+- Seção de projetos com filtro por tecnologia
+- Lightbox para visualização ampliada dos certificados
+- Música temática gerada com Web Audio API
+- Layout responsivo para desktop e mobile
 
-## 📁 Estrutura
+## Como usar
 
-```
+1. Abra [index.html](index.html) em um navegador.
+2. Use o menu lateral ou os atalhos do teclado para navegar.
+3. Na seção de projetos, use os filtros para destacar tecnologias.
+
+## Estrutura
+
+```text
 projeto-portifolio/
 ├── index.html
 ├── src/
 │   ├── css/
 │   │   └── style.css
 │   ├── img/
-│   │   └── CURRICULUM.jpg
 │   └── js/
 │       └── script.js
-└── .github/
-    └── workflows/
-        └── deploy.yml
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── README.md
 ```
 
-## 🔧 CI/CD
+## Organização do código
 
-O projeto está configurado com **GitHub Actions** para:
-- ✅ Validar HTML em cada push
-- 🚀 Fazer deploy automático para GitHub Pages
+- [index.html](index.html): estrutura do conteúdo e seções do portfólio
+- [src/css/style.css](src/css/style.css): estilos, layout, responsividade e animações
+- [src/js/script.js](src/js/script.js): navegação, filtros, música, lightbox e interações
 
-## 📱 Responsividade
+## CI/CD
 
-Site otimizado para dispositivos móveis e desktops.
+O projeto está configurado com GitHub Actions para validação e deploy automatizado.
 
-## 👤 Autor
+## Autor
 
-Desenvolvido por **PosterDev**
+Desenvolvido por PosterDev.
 
-- [GitHub](https://github.com/PosterDev)
-- [LinkedIn](https://linkedin.com)
+- GitHub: https://github.com/PosterDev
+- LinkedIn: https://linkedin.com
 
-## 📄 Licença
+## Licença
 
 Livre para uso pessoal.
