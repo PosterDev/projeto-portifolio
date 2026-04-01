@@ -1391,11 +1391,19 @@ li {
 
     .whatsapp-float {
         right: 12px;
-        bottom: 12px;
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
         width: 52px;
         height: 52px;
+        padding: 0;
+        gap: 0;
+        justify-content: center;
+        border-radius: 50%;
         border-width: 3px;
         box-shadow: 0 6px 0 #0e6a29, 0 10px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .whatsapp-label {
+        display: none;
     }
 
     .whatsapp-float i {
