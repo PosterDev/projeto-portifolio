@@ -4,10 +4,7 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Luckiest+Guy&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,100 +15,59 @@
   </head>
 
   <body>
-    <div class="clouds-layer" aria-hidden="true">
-      <div class="cld cld1"></div>
-      <div class="cld cld2"></div>
-      <div class="cld cld3"></div>
-      <div class="cld cld4"></div>
-    </div>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span>PosterDev</span>
+        </div>
 
-    <div class="container">
-      <!-- Menu -->
-      <div class="sidebar">
-        <h2>PosterDev</h2>
-        <button
-          class="nav-button is-active"
-          data-target="home"
-          onclick="trocarTela('home')"
-          type="button"
-        >
-          🏠 Home
-        </button>
-        <button
-          class="nav-button"
-          data-target="sobre"
-          onclick="trocarTela('sobre')"
-          type="button"
-        >
-          👤 Sobre
-        </button>
-        <button
-          class="nav-button"
-          data-target="trajetoria"
-          onclick="trocarTela('trajetoria')"
-          type="button"
-        >
-          📈 Minha Trajetória
-        </button>
-        <button
-          class="nav-button"
-          data-target="cargo"
-          onclick="trocarTela('cargo')"
-          type="button"
-        >
-          🎯 Cargo Desejado
-        </button>
-        <button
-          class="nav-button"
-          data-target="projetos"
-          onclick="trocarTela('projetos')"
-          type="button"
-        >
-          🧩 Projetos
-        </button>
-        <button
-          class="nav-button"
-          data-target="certificados"
-          onclick="trocarTela('certificados')"
-          type="button"
-        >
-          🏅 Certificados
-        </button>
-      </div>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#home" class="nav-link is-active">Home</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#trajetoria" class="nav-link">Trajetória</a>
+          <a href="#cargo" class="nav-link">Cargo</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#certificados" class="nav-link">Certificados</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+      </header>
 
-      <button id="music-toggle" class="music-toggle-btn" type="button">
-        🎵 Música: ON
-      </button>
-
-      <!-- Conteúdo -->
-      <div class="content">
-        <div id="home" class="card">
-          <h1>Bem-vindo(a) 👨‍💻</h1>
+      <main class="landing-content">
+        <section id="home" class="hero-section card">
+          <h1>Olá, é um prazer te ver por aqui!</h1>
           <div class="hero-badge">
-            Disponível para projetos e oportunidades front-end.
+            Disponível para projetos e oportunidades Full Stack.
           </div>
           <div class="profile-container">
             <img
               src="./src/img/CURRICULUM.jpg"
-              onerror="
-                this.onerror = null;
-                this.src =
-                  'https://raw.githubusercontent.com/PosterDev/projeto-portifolio/main/src/img/CURRICULUM.jpg';
-              "
+              loading="lazy"
               alt="Foto de perfil"
               class="profile-photo"
             />
           </div>
-          <p>
-            Construo interfaces que comunicam, convertem e crescem. HTML, CSS e
-            JavaScript com atenção a cada detalhe — código limpo, responsivo e
-            pronto para impressionar.
+          <p class="hero-intro">
+            Desenvolvo experiências digitais de alto impacto, alinhando clareza
+            visual com desempenho e usabilidade. Minha entrega é focada em
+            produtos que recrutadores e equipes querem usar.
           </p>
+          <div class="hero-highlights">
+            <div class="highlight-box">
+              <span>Entrega confiável</span>
+              <p>Comunicação clara e prazos cumpridos em cada etapa.</p>
+            </div>
+            <div class="highlight-box">
+              <span>Design funcional</span>
+              <p>Interfaces modernas com foco em conversão e usabilidade.</p>
+            </div>
+            <div class="highlight-box">
+              <span>Portfólio real</span>
+              <p>Projetos que mostram execução técnica e senso de produto.</p>
+            </div>
+          </div>
           <p class="dynamic-role">
             Foco atual:
-            <span id="rotating-role" class="role-chip" aria-live="polite"
-              >Interfaces modernas</span
-            >
+            <span id="rotating-role" class="role-chip" aria-live="polite">Interfaces modernas</span>
           </p>
           <div
             class="quick-stats"
@@ -130,9 +86,6 @@
               <span><b>Projetos em destaque</b></span>
             </div>
           </div>
-          <p class="interaction-hint">
-            Atalhos: 1 a 6 trocam de tela rapidamente.
-          </p>
           <div class="social-links">
             <a
               href="https://github.com/PosterDev"
@@ -152,26 +105,42 @@
               LinkedIn
             </a>
           </div>
-        </div>
 
-        <div id="sobre" class="card" style="display: none">
+          <div class="hero-actions">
+            <a href="#contato" class="project-link">Vamos conversar</a>
+          </div>
+        </section>
+
+        <section id="sobre" class="section card">
           <h1>Sobre mim</h1>
           <p>
-            Sou um profissional em transição para a área de desenvolvimento, com
-            foco em construir interfaces organizadas, funcionais e visualmente
-            consistentes. Trago comigo disciplina, senso de responsabilidade e
-            experiência anterior em contextos que exigem comunicação, estratégia
-            e execução com seriedade.
+            Transição de Carreira | Desenvolvedor Full Stack(HTML, CSS, JS, NODE) | 15 anos de Experiência em Gestão e Negócios
+            <br>
+            <br>
+
+Olá! Me chamo Antonio e estou vivendo um momento empolgante de transição para a área de Desenvolvimento de Software.
+
+Por 15 anos, atuei em uma empresa familiar onde a gestão de pessoas, o atendimento consultivo e a negociação foram a base do meu dia a dia. Essa experiência me deu uma visão clara: tecnologia só faz sentido se resolver problemas reais de pessoas reais.
+
+Hoje, uno essa visão de mercado à minha nova paixão Tech. Estou me especializando como Desenvolvedor Full Stack no DevClub , focando na criação de interfaces modernas e funcionais.
+
+🚀 O que trago na bagagem:
+<br>
+<br>
+<b>Hard Skills:</b> HTML5, CSS3, JavaScript, Git e GitHub.
+<br>
+<br>
+<b>Soft Skills:</b> Gestão de crises, visão de dono, foco no cliente e comunicação assertiva.
           </p>
           <p>
-            Hoje direciono essa bagagem para o desenvolvimento front-end,
-            estudando continuamente HTML, CSS, JavaScript e boas práticas de
+            Hoje direciono essa bagagem para o desenvolvimento Full Stack,
+            estudando continuamente HTML, CSS, JavaScript, Node e boas práticas de
             experiência do usuário para entregar projetos com mais clareza,
             qualidade e valor para o negócio.
           </p>
-        </div>
+        </section>
 
-        <div id="trajetoria" class="card" style="display: none">
+        <section id="trajetoria" class="section card">
           <h1>Minha Trajetória</h1>
           <p>
             Minha trajetória profissional foi construída em ambientes que
@@ -204,7 +173,7 @@
           </p>
           <p>
             Hoje, uno repertório profissional, disciplina e aprendizado contínuo
-            para evoluir como desenvolvedor front-end e contribuir em projetos
+            para evoluir como desenvolvedor Full Stack e contribuir em projetos
             que valorizem clareza, organização e qualidade de entrega.
           </p>
           <p><strong>Principais avanços nessa fase:</strong></p>
@@ -221,14 +190,14 @@
               desenvolvimento
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div id="cargo" class="card" style="display: none">
+        <section id="cargo" class="section card">
           <h1>Cargo Desejado</h1>
-          <h2>Desenvolvedor Front-End</h2>
+          <h2>Desenvolvedor Full Stack</h2>
           <p>
             Busco uma oportunidade como
-            <strong>Desenvolvedor Front-End</strong> para contribuir com
+            <strong>Desenvolvedor Full Stack</strong> para contribuir com
             interfaces bem construídas, colaboração com equipe e evolução
             contínua em projetos digitais que valorizem qualidade e resultado.
           </p>
@@ -252,14 +221,32 @@
             </li>
           </ul>
 
-          <h3>🛠️ Tecnologias que domino:</h3>
-          <div class="tech-stack">
-            <span class="tech">HTML5</span>
-            <span class="tech">CSS3</span>
-            <span class="tech">JavaScript</span>
-            <span class="tech">React</span>
-            <span class="tech">Git</span>
-            <span class="tech">Responsive Design</span>
+          <h3>🛠️ Tecnologias que aplico:</h3>
+          <div class="tech-stack-grid" aria-label="Logos das tecnologias aplicadas">
+            <figure class="tech-logo">
+              <img src="./src/img/HTML IMG.jpg" alt="Logo HTML5" />
+              <figcaption>HTML5</figcaption>
+            </figure>
+            <figure class="tech-logo">
+              <img src="./src/img/CSS IMG.png" alt="Logo CSS3" />
+              <figcaption>CSS3</figcaption>
+            </figure>
+            <figure class="tech-logo">
+              <img src="./src/img/JS IMG.jpg" alt="Logo JavaScript" />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="tech-logo">
+              <img src="./src/img/NODE JS.png" alt="Logo Node.js" />
+              <figcaption>Node.js</figcaption>
+            </figure>
+            <figure class="tech-logo tech-logo--icon">
+              <div class="tech-icon"><i class="fab fa-git-alt" aria-hidden="true"></i></div>
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure class="tech-logo tech-logo--icon">
+              <div class="tech-icon"><i class="fas fa-mobile-screen-button" aria-hidden="true"></i></div>
+              <figcaption>Responsive</figcaption>
+            </figure>
           </div>
 
           <div
@@ -301,9 +288,9 @@
               São Paulo/SP.</em
             >
           </p>
-        </div>
+        </section>
 
-        <div id="projetos" class="card" style="display: none">
+        <section id="projetos" class="section card">
           <h1>Projetos</h1>
           <p>
             Projetos que demonstram minha capacidade de transformar ideia em
@@ -392,7 +379,7 @@
               </p>
               <div class="project-tags">
                 <span>JavaScript</span>
-                <span>API Groq</span>
+                <span>API</span>
                 <span>Preview</span>
               </div>
               <div class="project-actions">
@@ -450,6 +437,72 @@
                 >
               </div>
             </article>
+
+            <article class="project-card" data-tags="html-css links">
+              <div class="project-card-top">
+                <span class="project-status">Utilitário</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>POSTER-LINKS</h3>
+              <p>
+                Página de links rápida para GitHub e LinkedIn, pensada para
+                apresentar perfis e contatos com visual simples e funcional.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Links</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/PosterDev/POSTER-LINKS"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver código</a
+                >
+                <a
+                  class="project-link"
+                  href="https://posterdev.github.io/POSTER-LINKS/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="css responsive">
+              <div class="project-card-top">
+                <span class="project-status">Landing Page</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>Landing-page-we-care</h3>
+              <p>
+                Página com foco em design e responsividade, desenvolvida para
+                apresentar conteúdos de forma moderna e acessível.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="project-link"
+                  href="https://github.com/PosterDev/Landing-page-we-care"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver código</a
+                >
+                <a
+                  class="project-link"
+                  href="https://posterdev.github.io/Landing-page-we-care/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Ver projeto</a
+                >
+              </div>
+            </article>
           </div>
 
           <p class="projects-empty" id="projects-empty" hidden>
@@ -457,7 +510,7 @@
           </p>
         </div>
 
-        <div id="certificados" class="card" style="display: none">
+        <section id="certificados" class="section card">
           <h1>Certificados</h1>
           <p>Meus certificados e conquistas em destaque.</p>
 
@@ -490,21 +543,78 @@
               />
               <p>Certificado de Programação</p>
             </div>
+            <div class="certificate-item">
+              <img
+                src="./src/img/Certificado - CSS Intermediário.png"
+                alt="Certificado de CSS Intermediário"
+                class="certificate-image"
+                tabindex="0"
+              />
+              <p>Certificado CSS Intermediário</p>
+            </div>
+            <div class="certificate-item">
+              <img
+                src="./src/img/Certificado - Git & GitHub.png"
+                alt="Certificado Git e GitHub"
+                class="certificate-image"
+                tabindex="0"
+              />
+              <p>Certificado Git & GitHub</p>
+            </div>
+            <div class="certificate-item">
+              <img
+                src="./src/img/Certificado - JavaScript pt. V - A Nova Ordem de Dados.png"
+                alt="Certificado JavaScript pt. V - A Nova Ordem de Dados"
+                class="certificate-image"
+                tabindex="0"
+              />
+              <p>Certificado JavaScript pt. V</p>
+            </div>
+            <div class="certificate-item">
+              <img
+                src="./src/img/Certificado - JavaScript pt. VI - A Ascensão do Async_Await.png"
+                alt="Certificado JavaScript pt. VI - A Ascensão do Async_Await"
+                class="certificate-image"
+                tabindex="0"
+              />
+              <p>Certificado JavaScript pt. VI</p>
+            </div>
+            <div class="certificate-item">
+              <img
+                src="./src/img/Certificado - Node.png"
+                alt="Certificado Node"
+                class="certificate-image"
+                tabindex="0"
+              />
+              <p>Certificado Node</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div class="mario-runner" aria-hidden="true">
-      <div class="mario-char">
-        <div class="mc-hat"></div>
-        <div class="mc-head"></div>
-        <div class="mc-suit"></div>
-        <div class="mc-feet"></div>
-      </div>
-      <div class="cv-paper"></div>
+        <section id="contato" class="section card">
+          <h1>Contato</h1>
+          <p>
+            Quer iniciar um projeto ou conversar sobre uma oportunidade?
+            Vamos unir foco, disciplina e entrega com a mesma determinação
+            de quem busca a melhor volta.
+          </p>
+          <div class="contact-actions">
+            <a
+              href="https://wa.me/5511933559883?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20voc%C3%AA."
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+            >Enviar mensagem</a>
+            <a
+              href="https://www.linkedin.com/in/antonio-posteraro-78b787255/"
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+            >LinkedIn</a>
+          </div>
+        </section>
+      </main>
     </div>
-    <div class="mario-target" aria-hidden="true"></div>
 
     <a
       href="https://wa.me/5511933559883?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20voc%C3%AA."
@@ -535,6 +645,7 @@
       </div>
     </div>
 
+    <script src="./src/js/config.js" defer></script>
     <script src="./src/js/script.js" defer></script>
   </body>
 </html>
